@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>聯絡我們｜我的企業網站</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- 網站標題 -->
+  <header>
+    <h1>聯絡我們</h1>
+    <p>您的意見，是我們進步的動力</p>
+  </header>
+
+  <!-- 導覽選單 -->
+  <nav>
+    <a href="index.html">首頁</a>
+    <a href="about.html">公司介紹</a>
+    <a href="contact.html">聯絡我們</a>
+  </nav>
+
+  <main class="container">
+
+    <section class="card">
+      <h2>歡迎與我們聯絡</h2>
+
+      <p>
+        如果您對我們的服務有任何疑問，
+        歡迎填寫以下表單，
+        我們期待收到您的訊息。
+      </p>
+    </section>
+
+    <!-- 聯絡表單 -->
+    <section class="card">
+
+      <h2>客戶聯絡表單</h2>
+
+      <form id="contactForm">
+
+        <label for="name">姓名：</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="請輸入您的姓名"
+          required
+        >
+
+        <label for="phone">電話：</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="請輸入您的電話"
+          required
+        >
+
+        <label for="email">Email：</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="請輸入您的電子郵件"
+          required
+        >
+
+        <label for="message">聯絡內容：</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="6"
+          placeholder="請輸入您想聯絡的內容"
+          required
+        ></textarea>
+
+        <button type="submit" class="button">
+          送出表單
+        </button>
+
+        <button type="reset" class="button">
+          清除內容
+        </button>
+
+      </form>
+
+      <p id="result" role="status" aria-live="polite"></p>
+
+    </section>
+
+    <!-- 聯絡資訊 -->
+    <section class="card">
+      <h2>電子郵件</h2>
+      <p>聯絡信箱：shedychan@gmail.com</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 我的企業網站 All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    const form = document.getElementById("contactForm");
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      document.getElementById("result").textContent =
+        "感謝您的填寫！這是課堂展示表單，目前不會實際寄送或儲存資料。";
+
+      form.reset();
+    });
+  </script>
+
+</body>
+</html>
