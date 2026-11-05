@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的數位學習生活</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Microsoft JhengHei", sans-serif;
+      background: #f4f8fb;
+      color: #334155;
+      line-height: 1.8;
+    }
+
+    header {
+      background: #2563eb;
+      color: white;
+      text-align: center;
+      padding: 55px 20px;
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 18px;
+    }
+
+    nav {
+      background: #1e40af;
+      text-align: center;
+      padding: 12px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      margin-bottom: 20px;
+      border-radius: 15px;
+      box-shadow: 0 3px 12px #00000010;
+    }
+
+    .card h2 {
+      color: #2563eb;
+    }
+
+    .button {
+      display: inline-block;
+      background: #2563eb;
+      color: white;
+      padding: 10px 24px;
+      border-radius: 25px;
+      text-decoration: none;
+    }
+
+    footer {
+      background: #1e3a8a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* RWD：平板及手機版面調整 */
+    @media (max-width: 600px) {
+      header {
+        padding: 35px 15px;
+      }
+
+      header h1 {
+        font-size: 26px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px 8px;
+      }
+
+      main {
+        padding: 0 12px;
+      }
+
+      .card {
+        padding: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>歡迎來到我的數位學習世界</h1>
+    <p>活到老，學到老，讓科技豐富生活！</p>
+  </header>
+
+  <nav>
+    <a href="#about">關於我</a>
+    <a href="#ai">AI學習</a>
+    <a href="#course">數位課程</a>
+  </nav>
+
+  <main>
+
+    <section class="card" id="about">
+      <h2>關於我的學習生活</h2>
+      <p>
+        在數位時代，我們可以透過網路學習新知識，
+        運用科技讓生活更加便利、有趣。
+      </p>
+    </section>
+
+    <section class="card" id="ai">
+      <h2>人工智慧 AI</h2>
+      <p>
+        AI 可以協助我們寫文章、製作圖片、
+        整理資料，讓學習與工作更有效率。
+      </p>
+      <a class="button" href="https://chatgpt.com/">
+        認識 AI
+      </a>
+    </section>
+
+    <section class="card" id="course">
+      <h2>我的數位學習課程</h2>
+      <p>1. AI 人工智慧應用</p>
+      <p>2. 手機生活與數位工具</p>
+      <p>3. 網站設計與網路應用</p>
+      <p>4. 元宇宙與創意學習</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 我的數位學習生活｜我的第一個 RWD 網站</p>
+  </footer>
+
+</body>
+</html>
