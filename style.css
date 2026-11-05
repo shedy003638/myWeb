@@ -1,0 +1,127 @@
+
+/* 全網站共用設計 */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, "Microsoft JhengHei", sans-serif;
+  color: #334155;
+  background: #f4f8fc;
+  line-height: 1.8;
+}
+
+header {
+  background: #1d4ed8;
+  color: white;
+  text-align: center;
+  padding: 45px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+header p {
+  font-size: 18px;
+}
+
+nav {
+  background: #1e40af;
+  text-align: center;
+  padding: 14px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 18px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #bfdbfe;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 35px auto;
+  padding: 0 20px;
+}
+
+.card {
+  background: white;
+  padding: 28px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 15px #00000010;
+}
+
+h2 {
+  color: #1d4ed8;
+}
+
+.button {
+  display: inline-block;
+  background: #2563eb;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #1e40af;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0 18px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+label {
+  font-weight: bold;
+}
+
+footer {
+  background: #1e3a8a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* RWD 響應式設計 */
+
+@media (max-width: 600px) {
+  header {
+    padding: 30px 15px;
+  }
+
+  header h1 {
+    font-size: 25px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px 8px;
+  }
+
+  .container {
+    padding: 0 12px;
+    margin: 20px auto;
+  }
+
+  .card {
+    padding: 18px;
+  }
+}
