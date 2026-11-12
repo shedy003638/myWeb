@@ -1,158 +1,53 @@
-
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>我的數位學習生活</title>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: "Microsoft JhengHei", sans-serif;
-      background: #f4f8fb;
-      color: #334155;
-      line-height: 1.8;
-    }
-
-    header {
-      background: #2563eb;
-      color: white;
-      text-align: center;
-      padding: 55px 20px;
-    }
-
-    header h1 {
-      font-size: 36px;
-      margin: 0;
-    }
-
-    header p {
-      font-size: 18px;
-    }
-
-    nav {
-      background: #1e40af;
-      text-align: center;
-      padding: 12px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-    }
-
-    main {
-      max-width: 1000px;
-      margin: 30px auto;
-      padding: 0 20px;
-    }
-
-    .card {
-      background: white;
-      padding: 25px;
-      margin-bottom: 20px;
-      border-radius: 15px;
-      box-shadow: 0 3px 12px #00000010;
-    }
-
-    .card h2 {
-      color: #2563eb;
-    }
-
-    .button {
-      display: inline-block;
-      background: #2563eb;
-      color: white;
-      padding: 10px 24px;
-      border-radius: 25px;
-      text-decoration: none;
-    }
-
-    footer {
-      background: #1e3a8a;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-
-    /* RWD：平板及手機版面調整 */
-    @media (max-width: 600px) {
-      header {
-        padding: 35px 15px;
-      }
-
-      header h1 {
-        font-size: 26px;
-      }
-
-      nav a {
-        display: inline-block;
-        margin: 5px 8px;
-      }
-
-      main {
-        padding: 0 12px;
-      }
-
-      .card {
-        padding: 18px;
-      }
-    }
-  </style>
+  <meta name="description" content="用策略、內容與數據，讓品牌被更多人看見。">
+  <title>曜點數位行銷｜首頁</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-  <header>
-    <h1>歡迎來到我的數位學習世界</h1>
-    <p>活到老，學到老，讓科技豐富生活！</p>
+  <header class="site-header">
+    <a class="logo" href="index.html"><span class="logo-mark">Y</span> 曜點<span>行銷</span></a>
+    <nav>
+      <a class="active" href="index.html">首頁</a>
+      <a href="about.html">關於我們</a>
+      <a href="contact.html">聯絡我們</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#about">關於我</a>
-    <a href="#ai">AI學習</a>
-    <a href="#course">數位課程</a>
-  </nav>
-
   <main>
-
-    <section class="card" id="about">
-      <h2>關於我的學習生活</h2>
-      <p>
-        在數位時代，我們可以透過網路學習新知識，
-        運用科技讓生活更加便利、有趣。
-      </p>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">DIGITAL MARKETING STUDIO</p>
+        <h1>讓好品牌，<br><span>被更多人看見。</span></h1>
+        <p class="hero-copy">從社群經營、內容企劃到數位廣告，讓每一次溝通都更有方向，讓品牌與顧客建立真正的連結。</p>
+        <a class="button" href="contact.html">與我們聊聊 <span>→</span></a>
+      </div>
+      <div class="hero-art" aria-label="數位行銷概念插圖">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="art-card card-main"><span class="mini-label">BRAND GROWTH</span><strong>+128%</strong><small>品牌互動成長</small><div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+        <div class="art-card card-float"><span class="bubble">✦</span><strong>好點子</strong><small>創造好影響</small></div>
+        <div class="art-dot dot-one"></div><div class="art-dot dot-two"></div>
+      </div>
     </section>
 
-    <section class="card" id="ai">
-      <h2>人工智慧 AI</h2>
-      <p>
-        AI 可以協助我們寫文章、製作圖片、
-        整理資料，讓學習與工作更有效率。
-      </p>
-      <a class="button" href="https://chatgpt.com/">
-        認識 AI
-      </a>
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">WHAT WE DO</p>
+        <h2>讓行銷每一步，都更有價值</h2>
+        <p>結合創意與策略，打造清楚一致的品牌體驗。</p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card"><div class="service-icon">✳</div><h3>社群行銷</h3><p>規劃社群內容與溝通節奏，累積品牌好感與忠實受眾。</p><span class="card-number">01</span></article>
+        <article class="service-card"><div class="service-icon">◈</div><h3>內容企劃</h3><p>用貼近受眾的故事與視覺，傳遞品牌特色與核心價值。</p><span class="card-number">02</span></article>
+        <article class="service-card"><div class="service-icon">⌁</div><h3>數位策略</h3><p>以目標與數據為基礎，持續檢視成效並優化行銷方向。</p><span class="card-number">03</span></article>
+      </div>
     </section>
 
-    <section class="card" id="course">
-      <h2>我的數位學習課程</h2>
-      <p>1. AI 人工智慧應用</p>
-      <p>2. 手機生活與數位工具</p>
-      <p>3. 網站設計與網路應用</p>
-      <p>4. 元宇宙與創意學習</p>
-    </section>
-
+    <section class="cta-band"><div><p class="eyebrow">LET'S MAKE IT HAPPEN</p><h2>下一個好點子，從這裡開始。</h2></div><a class="button button-light" href="contact.html">聯絡我們 <span>→</span></a></section>
   </main>
-
-  <footer>
-    <p>© 2026 我的數位學習生活｜我的第一個 RWD 網站</p>
-  </footer>
-
+  <footer><a class="logo footer-logo" href="index.html"><span class="logo-mark">Y</span> 曜點<span>行銷</span></a><p>© 2026 曜點數位行銷｜課堂展示網站</p></footer>
 </body>
 </html>

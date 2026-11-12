@@ -1,124 +1,43 @@
-
 <!DOCTYPE html>
 <html lang="zh-Hant">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>聯絡我們｜我的企業網站</title>
-
+  <title>曜點數位行銷｜聯絡我們</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-  <!-- 網站標題 -->
-  <header>
-    <h1>聯絡我們</h1>
-    <p>您的意見，是我們進步的動力</p>
+  <header class="site-header">
+    <a class="logo" href="index.html"><span class="logo-mark">Y</span> 曜點<span>行銷</span></a>
+    <nav><a href="index.html">首頁</a><a href="about.html">關於我們</a><a class="active" href="contact.html">聯絡我們</a></nav>
   </header>
-
-  <!-- 導覽選單 -->
-  <nav>
-    <a href="index.html">首頁</a>
-    <a href="about.html">公司介紹</a>
-    <a href="contact.html">聯絡我們</a>
-  </nav>
-
-  <main class="container">
-
-    <section class="card">
-      <h2>歡迎與我們聯絡</h2>
-
-      <p>
-        如果您對我們的服務有任何疑問，
-        歡迎填寫以下表單，
-        我們期待收到您的訊息。
-      </p>
+  <main>
+    <section class="page-hero contact-hero">
+      <p class="eyebrow">GET IN TOUCH</p>
+      <h1>有想法嗎？<br><span>一起讓它發生。</span></h1>
+      <p>告訴我們你的需求，我們會透過 Email 與你聯繫。</p>
     </section>
-
-    <!-- 聯絡表單 -->
-    <section class="card">
-
-      <h2>客戶聯絡表單</h2>
-
-      <form id="contactForm">
-
-        <label for="name">姓名：</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="請輸入您的姓名"
-          required
-        >
-
-        <label for="phone">電話：</label>
-        <input
-          type="tel"
-          id="phone"
-          name="phone"
-          placeholder="請輸入您的電話"
-          required
-        >
-
-        <label for="email">Email：</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="請輸入您的電子郵件"
-          required
-        >
-
-        <label for="message">聯絡內容：</label>
-        <textarea
-          id="message"
-          name="message"
-          rows="6"
-          placeholder="請輸入您想聯絡的內容"
-          required
-        ></textarea>
-
-        <button type="submit" class="button">
-          送出表單
-        </button>
-
-        <button type="reset" class="button">
-          清除內容
-        </button>
-
+    <section class="contact-wrap">
+      <aside class="contact-info">
+        <p class="eyebrow">SAY HELLO</p><h2>每個好合作，<br>都從一次對話開始。</h2>
+        <p>歡迎分享你的品牌、行銷目標或目前遇到的挑戰。</p>
+        <div class="info-line"><span>✉</span><div><small>EMAIL</small><strong>請透過右側表單留言</strong></div></div>
+        <div class="info-line"><span>⌖</span><div><small>STUDIO</small><strong>台灣・線上服務</strong></div></div>
+      </aside>
+      <form class="contact-form" action="請替換成你的_Google_Apps_Script_網頁應用程式網址" method="post" target="_blank">
+        <label for="name">姓名 <em>*</em></label>
+        <input id="name" name="name" type="text" placeholder="請輸入你的姓名" required maxlength="80">
+        <label for="email">Email <em>*</em></label>
+        <input id="email" name="email" type="email" placeholder="name@example.com" required maxlength="120">
+        <label for="message">聯絡事項 <em>*</em></label>
+        <textarea id="message" name="message" rows="5" placeholder="請簡單描述你的需求或想法..." required maxlength="3000"></textarea>
+        <!-- 隱藏欄位：簡易防垃圾訊息，正常使用者不需填寫 -->
+        <div class="hp-field" aria-hidden="true"><label for="website">Website</label><input id="website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+        <button class="button submit-button" type="submit">送出訊息 <span>→</span></button>
+        <p class="form-note">按下送出後，系統會開啟 Google 回覆頁面。請勿在表單填寫密碼或敏感個人資料。</p>
       </form>
-
-      <p id="result" role="status" aria-live="polite"></p>
-
     </section>
-
-    <!-- 聯絡資訊 -->
-    <section class="card">
-      <h2>電子郵件</h2>
-      <p>聯絡信箱：shedychan@gmail.com</p>
-    </section>
-
   </main>
-
-  <footer>
-    <p>© 2026 我的企業網站 All Rights Reserved.</p>
-  </footer>
-
-  <script>
-    const form = document.getElementById("contactForm");
-
-    form.addEventListener("submit", function(event) {
-      event.preventDefault();
-
-      document.getElementById("result").textContent =
-        "感謝您的填寫！這是課堂展示表單，目前不會實際寄送或儲存資料。";
-
-      form.reset();
-    });
-  </script>
-
+  <footer><a class="logo footer-logo" href="index.html"><span class="logo-mark">Y</span> 曜點<span>行銷</span></a><p>© 2026 曜點數位行銷｜課堂展示網站</p></footer>
 </body>
 </html>
